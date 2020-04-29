@@ -13,7 +13,7 @@ Codes in this section download the data to yesterday and saves them in a specifi
 
 To work with dates, we will use the `lubridate` library and functions therein. See the codes below.
 
-`
+```
 library(lubridate)
 for(i in 0:as.numeric(today()-mdy("01-22-2020")-1)){
   datet<-format(mdy("01-22-2020")+i,"%m-%d-%Y")
@@ -22,6 +22,6 @@ for(i in 0:as.numeric(today()-mdy("01-22-2020")-1)){
   destfile <- paste("C:/Users/TJIJD/Dropbox/Projects/2020/covid-19/",datet,".csv",sep="")
   download.file(url, destfile)
 }
-`
+```
 
 
