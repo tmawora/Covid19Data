@@ -11,7 +11,7 @@ From the link, notice that the data are named according to the date. For instanc
 
 Codes in this section download the data to yesterday and saves them in a specified directory. Data for each day are saved in different `.csv` files that are named according to the date.
 
-To work with dates, we will use the `lubridate` library and functions therein. See the codes below.
+To work with dates, we will use the `lubridate` library and functions therein. See the codes below. In case you don't have it in your computer, then install it first using the `install.packages("lubridate")` command.
 
 ```
 library(lubridate)
@@ -24,4 +24,8 @@ for(i in 0:as.numeric(today()-mdy("01-22-2020")-1)){
 }
 ```
 
+From the above codes, `destfile` is the destination file. The first part of the file contains the path to the directory. You should modify it to a path within your computer.
 
+Run the code to get the data files. They will be different files. Open a few and study them so you can see how to merge them.
+
+Happy coding
