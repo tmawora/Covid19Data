@@ -1,7 +1,7 @@
-# Covid-19 Data
+## Covid-19 Data
 This extracts daily data from the provided website. It further merges data by country, looking at overall country cases.
 
-# Downloading data 
+## Downloading data 
 
 All data will be downloaded from the following website: 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/01-22-2020.csv'. 
 
@@ -28,7 +28,7 @@ From the above codes, `destfile` is the destination file. The first part of the 
 
 Run the code to get the data files. They will be different files. Open a few and study them so you can see how to merge them.
 
-# Updating data from date of last collection to current
+## Updating data from date of last collection to current
 
 The previous codes get started with the data. In case you already have some of the data, then you don't need to redownload all of them. You can easily start from the last time you saved. 
 
@@ -56,7 +56,7 @@ for(i in 1:as.numeric(today()-mdy(files))){
   download.file(url, destfile)
 }
 ```
-# Merging the data
+## Merging the data
 
 It is imperative we merge the multiple datasets so we can work with a single file. This will enable one to extract the section he/she wants to use , by country or date.
 
