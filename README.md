@@ -116,4 +116,10 @@ newData<-newData[,c(2:8,11)]
 
 One can now edit and subset the rows of interest. For instance, for my next codes, I will focus on my country, Kenya, and its neighbours.
 
+Finally, one can save the file using the `write.csv` function as below.
+
+```
+write.csv(newData,"Covid19.csv")
+```
+
 Happy coding
